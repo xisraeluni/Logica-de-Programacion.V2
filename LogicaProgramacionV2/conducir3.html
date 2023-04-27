@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA DE LICENCIA DE CONDUCIR</h1>
+<h3 style="color: blue;" >EJERCICIO ORACLE LICENCIA</h3>
+
+<script>
+
+
+    let edad = prompt('¿Cual es tu edad?');
+    let tieneLicencia = prompt('¿Tienes licencia? SI o NO');
+    
+    
+    function saltoLinea() {
+        document.write('<br><hr>');
+    }
+
+    function imprimir(texto) {
+        document.write(texto);
+        saltoLinea();
+    }
+
+    
+    if (edad > 18 && tieneLicencia.toLowerCase() === 'si') {
+        imprimir(`<h3>Tienes suficiente edad ${edad} y también tienes licencia</h3>`);
+        imprimir('<h3>Si puedes conducir</h3>');
+
+    } else if (edad > 18 && tieneLicencia.toLowerCase() === 'no') {
+        imprimir(`<h3>Tienes suficiente edad ${edad} pero no tienes licencia</h3>`);
+        imprimir('<h3>No puedes conducir</h3>');
+
+    } else {
+        imprimir(`<h3>Que mal tienes ${edad}</h3>`);
+        imprimir('<h3>Lo siento no puedes conducir</h3>');
+    }
+
+
+</script>
+
+<!--
+  mostrar el mensaje "Puedes conducir" o "No puedes conducir". Recuerda que puede 
+  conducir solo quien tiene 18 años o más y también quien tiene una licencia de conducir.
+  const tieneLicencia2 = tieneLicencia.toLowerCase();
+  No sabes como el usuario va a colocar la respuesta si en mayúsculas o minúsculas asi 
+  que se puede usar ".toLowerCase()" la cual nos ayuda a convertir un cadena de texto a
+  minúsculas y asi no hacer varias comparaciones menor que "<", mayor que ">" .    
+-->

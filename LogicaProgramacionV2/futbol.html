@@ -1,0 +1,35 @@
+<meta charset="UTF -8">
+
+<script>
+    alert("Esta en una pagina de ORACLE");
+</script>
+
+<H1 style="color:darkblue " >PROGRAMA CALCULAR PUNTOS DE EQUIPO FUTBOL</H1>
+<h3 style="color: blue;">Bienvenido a ORACLE</h3>
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br><br><br><hr>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+    var empates = parseInt(prompt("Informe la cantidad de empates")); 
+
+    var puntosTotal = (victorias * 3) + empates;
+
+    imprimir("El total de puntos del equipo es: " + puntosTotal);
+
+
+</script>
+
+<!--
+    Aqui se utiliza parseInt para convertir la funcion del numero a texto.
+-->

@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br><hr>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function sortearNumero() {
+
+        return Math.round(Math.random() * 10);
+    }
+
+    var numeroPensado = sortearNumero();
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10: "));
+
+    if (numeroLanzado == numeroPensado) {
+
+        imprimir("Uau! Vos acertaste, pues yo pensé en el número " + numeroPensado);
+
+    } else {
+
+        var contador = 1;
+        while (contador <= 10);
+
+        imprimir("¡Se acabó, vos erraste!");
+        contador = contador +1;
+
+    }
+
+
+</script>
+
+<!--
+    se queda infinito solamante lo encontre 2 veces pero las demas se queda infinito 
+-->

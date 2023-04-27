@@ -1,0 +1,54 @@
+<meta charset="UTF -8">
+
+<script>
+    alert("Esta en una pagina de ORACLE");
+</script>
+
+<H1 style="color:darkblue ">PROGRAMA CALCULAR PUNTOS DE EQUIPO FUTBOL</H1>
+<h3 style="color: blue;">Bienvenido a ORACLE</h3>
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br><br><br><hr>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+    }
+
+
+    var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+    var empates = parseInt(prompt("Informe la cantidad de empates"));
+
+    var puntosTotal = (victorias * 3) + empates;
+
+    imprimir("El total de puntos del equipo es: " + puntosTotal);
+
+
+    if (puntosTotal > 28) {
+
+        imprimir("El equipo esta mejor que el año pasado");
+    }
+
+    if (puntosTotal < 28) {
+
+        imprimir("El equipo esta peor que el año pasado");
+    }
+
+    if (puntosTotal == 28) {
+
+        imprimir("El equipo esta igual que el año pasado");
+    }
+
+
+</script>
+
+<!--
+    Aqui utilizamos if como condicion y lo que dentro del parentesis es la condicion que 
+    queremos que realize el codigo y simepre va dentro de las llaves esa condicion {}
+    puede llevar operaciones como se muestra de mayor > y menor < y la condicion de == .
+-->

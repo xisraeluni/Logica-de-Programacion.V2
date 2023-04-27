@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA DE LICENCIA DE CONDUCIR</h1>
+<h3 style="color: blue;" >EJERCICIO ORACLE LICENCIA</h3>
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br><br><hr>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if (edad > 18 && tieneLicencia.toUpperCas() == "S") {
+
+        imprimir(" Puedes conducir " );
+
+    }
+    else {
+
+        imprimir(" No puedes conducir ");
+
+    }
+
+
+</script>
